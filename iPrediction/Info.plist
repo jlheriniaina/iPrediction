@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>On a besoin de votre autorisation accède à votre photo. </string>
+	<key>NSCameraUsageDescription</key>
+	<string>On a besoin de votre autorisation pour prende de photo.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

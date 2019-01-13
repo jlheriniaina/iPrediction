@@ -12,6 +12,7 @@
 		A0CCC99A21E28B6600C479AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CCC99821E28B6600C479AB /* Main.storyboard */; };
 		A0CCC99C21E28B6600C479AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CCC99B21E28B6600C479AB /* Assets.xcassets */; };
 		A0CCC99F21E28B6600C479AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CCC99D21E28B6600C479AB /* LaunchScreen.storyboard */; };
+		A0CCC9A821E2A77E00C479AB /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A0CCC9A721E2A77E00C479AB /* MobileNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A0CCC99B21E28B6600C479AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0CCC99E21E28B6600C479AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0CCC9A021E28B6600C479AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0CCC9A721E2A77E00C479AB /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		A0CCC99321E28B6600C479AB /* iPrediction */ = {
 			isa = PBXGroup;
 			children = (
+				A0CCC9A621E2A74F00C479AB /* CoreModel */,
 				A0CCC99421E28B6600C479AB /* AppDelegate.swift */,
 				A0CCC99621E28B6600C479AB /* ViewController.swift */,
 				A0CCC99821E28B6600C479AB /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				A0CCC9A021E28B6600C479AB /* Info.plist */,
 			);
 			path = iPrediction;
+			sourceTree = "<group>";
+		};
+		A0CCC9A621E2A74F00C479AB /* CoreModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0CCC9A721E2A77E00C479AB /* MobileNet.mlmodel */,
+			);
+			path = CoreModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +107,7 @@
 				TargetAttributes = {
 					A0CCC99021E28B6600C479AB = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -138,6 +149,7 @@
 			files = (
 				A0CCC99721E28B6600C479AB /* ViewController.swift in Sources */,
 				A0CCC99521E28B6600C479AB /* AppDelegate.swift in Sources */,
+				A0CCC9A821E2A77E00C479AB /* MobileNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +286,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2M8976D8S;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PQ788L7TER;
 				INFOPLIST_FILE = iPrediction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.ingenosya.iPrediction;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ingenosya.socialapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5cf97693-1c20-46af-80d9-7312680261b0";
+				PROVISIONING_PROFILE_SPECIFIER = social_dev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +303,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2M8976D8S;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iPrediction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fr.ingenosya.iPrediction;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ingenosya.socialapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
